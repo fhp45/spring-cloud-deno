@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/user-center/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-center/pom.xml" />
+        <option value="$PROJECT_DIR$/vip-center/pom.xml" />
       </list>
     </option>
   </component>

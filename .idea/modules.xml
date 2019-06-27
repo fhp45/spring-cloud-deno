@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-center/eureka-center.iml" filepath="$PROJECT_DIR$/eureka-center/eureka-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-cloud-deno.iml" filepath="$PROJECT_DIR$/spring-cloud-deno.iml" />
       <module fileurl="file://$PROJECT_DIR$/user-center/user-center.iml" filepath="$PROJECT_DIR$/user-center/user-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vip-center/vip-center.iml" filepath="$PROJECT_DIR$/vip-center/vip-center.iml" />
     </modules>
   </component>
 </project>
