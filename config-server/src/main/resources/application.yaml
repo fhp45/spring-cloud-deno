@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/fhp45/spring-config
+          search-paths: respo
+
+          #公开仓库，不需要填写用户名密码
+          #username:
+          #password:
+      label: master
+server:
+  port: 8040
+

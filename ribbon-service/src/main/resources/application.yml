@@ -1,0 +1,10 @@
+#由于ribbon依赖于eureka中服务的注册信息，所以需要配置eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+server:
+  port: 8020
+spring:
+  application:
+    name: ribbon-service

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fhp.vipcenter.mapper.VipMapper">
+
+    <select id="isVip" resultType="vip" parameterType="int">
+      select * from vip where userid = #{id}
+    </select>
+
+    <select id="vipLevel" parameterType="int" resultType="int">
+        select LEVEL from viplevel where id = #{id}
+    </select>
+
+    <insert id="register" parameterType="vip">
+        insert into vip(id,userid,viplevel,expire) values (#{id},#{userid},#{viplevel},#{expire})
+    </insert>
+
+    <delete id="delete" parameterType="int">
+        delete from user where userid = #{id}
+    </delete>
+
+    <update id="update" parameterType="vip">
+        update user set viplevel = #{viplevel} where id = #{id}
+    </update>
+
+</mapper>

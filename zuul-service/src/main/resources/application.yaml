@@ -1,0 +1,21 @@
+#配置注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+#服务端口
+server:
+  port: 8030
+spring:
+  application:
+    name: zuul-sevice
+
+#配置网关
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: ribbon-service
+    api-b:
+      path: /api-b/**
+      serviceId: vip-center

@@ -1,0 +1,31 @@
+#配置数据源和项目名称
+spring:
+  application:
+    name: vip-center
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring_demo?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: password
+
+
+#feign自带了hystrix断路器，默认是关闭的
+feign:
+  hystrix:
+    enabled: true
+
+server:
+  port: 8010
+
+
+
+
+#配置mybatis
+mybatis:
+  type-aliases-package: com.fhp.vipcenter.domain
+  mapper-locations: classpath:mapper/*Mapper.xml
+
+#配置eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
